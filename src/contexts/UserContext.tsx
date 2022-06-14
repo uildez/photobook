@@ -24,7 +24,7 @@ type UserContextType = {
   countSearch: number;
   setCountSearch: (newState: number) => void;
   setModalInfo: (arg0: any) => void;
-  handleSearchChange: (newState: boolean) => void;
+  handleSearchChange: (newState: string) => void;
 };
 
 const initialState = {
