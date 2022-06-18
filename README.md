@@ -19,7 +19,7 @@ Project is about a website photo album make with React TS, Tailwind CSS and cons
 ``npm``
 
 #### Run the application in development mode
-``npm run start``
+``npm run dev``
 
 
 ### 🛠 Technologies
