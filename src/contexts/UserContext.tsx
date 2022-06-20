@@ -25,7 +25,6 @@ type UserContextType = {
   setCountSearch: (newState: number) => void;
   setModalInfo: (arg0: any) => void;
   handleSearchChange: (newState: any) => void;
-  handleClick: () => void;
 };
 
 const initialState = {
@@ -99,8 +98,8 @@ export const UserContextProvider = ({ children }: UserContextProps) => {
     loadPhotos();
   }, [count]);
 
-  const handleClick = () => {
-    const e = searchWord;
+  function handleSearchChange(e: any) {
+    setSearchWord(e);
 
     async function searchPhotos() {
       setIsFetching(true);
@@ -109,15 +108,11 @@ export const UserContextProvider = ({ children }: UserContextProps) => {
         .then((response) => {
           setBarSearch(response.data.photos);
           setIsFetching(false);
+          console.log(barSearch)
         })
         .catch((error) => console.log(error));
     }
     searchPhotos();
-  };
-
-  function handleSearchChange(e: any) {
-    setSearchWord(e);
-    console.log(typeof e);
   }
 
   function modal(photo: any) {
@@ -146,8 +141,7 @@ export const UserContextProvider = ({ children }: UserContextProps) => {
         modalInfo,
         setModalInfo,
         searchWord,
-        setSearchWord,
-        handleClick,
+        setSearchWord
       }}
     >
       {children}

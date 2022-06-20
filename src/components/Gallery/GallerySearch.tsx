@@ -16,6 +16,9 @@ export function GallerySearch() {
         <div key={photos.id}>
           <a className="relative z-0 row-auto">
             <img
+              role="button"
+              tabIndex={0}
+              onKeyPress={() => modal({ photo: photos })}
               onClick={() => modal({ photo: photos })}
               src={photos.src.large}
               className="h-full object-cover rounded-2xl md:shadow-2xl shadow-red-700 border-slate-300 dark:border-slate-800 transition-all ease-in-out"
