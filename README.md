@@ -1,10 +1,12 @@
-# PhotoBook | Gallery Using Api Pexels
-Project is about a website photo album make with React TS, Tailwind CSS and consuming the API from Pexels with Axios.
+<h1 align="center" color="white"><img height="40" valign="top" src="./src/assets/images/SVG/logo-light.svg"/>  Photo<strong>Book</strong></h1>
 
-### Link to acess project: https://photobook-api.vercel.app/
+<div align="center"><img src="./src/assets/photoBook.gif" width="900"/></div>
+<h2 align="center"><a color="white" href="https://photobook-api.vercel.app/">Acess PhotoBook</a></h2> 
 
+### 📕 About
+**PhotoBook** is a website Gallery using API Pexels make with React TS, Tailwind CSS and consuming the API from Pexels with Axios.
 
-### Features
+### ⚙️ Features
 - [x] Search bar updating the API URL
 - [x] "Load more" button to load more images
 - [x] Add the dark mode on site  
@@ -12,15 +14,25 @@ Project is about a website photo album make with React TS, Tailwind CSS and cons
 - [ ] Navigate using keyboard
 
 ### Prerequisites
-#### Clone this repository
-``git clone``
+```bash
+  #### Clone this repository
+  $ git clone
+```
 
-#### Install dependencies
-``npm``
+```bash
+  #### Install dependencies
+  $ npm
+```
 
-#### Run the application in development mode
-``npm run dev``
+```bash
+  #### Clone this repository
+  $ git clone "https://github.com/uildez/photobook.git"
+```
 
+```bash
+  #### Run the application in development mode
+  $ npm run dev
+```
 
 ### 🛠 Technologies
 The following tools were used in building the project:
