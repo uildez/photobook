@@ -4,7 +4,7 @@
 <h2 align="center"><a color="white" href="https://photobook-api.vercel.app/">Acess PhotoBook</a></h2> 
 
 ### 📕 About
-**PhotoBook** is a website Gallery using API Pexels make with React TS, Tailwind CSS and consuming the API from Pexels with Axios.
+**PhotoBook** is a photo gallery that uses the Pexels API developed with React TS, Tailwind CSS and consuming the Pexels API with Axios. Fully responsive, with dark mode and the possibility of downloading images.
 
 ### ⚙️ Features
 - [x] Search bar updating the API URL
