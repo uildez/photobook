@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .icon-switch {
+    @apply p-1 hover:cursor-pointer hover:scale-105 rounded-full transition-all ease-in-out duration-500;
+  }
+  .btn-red {
+    @apply bg-red-600 flex items-center mt-12 cursor-pointer px-8 py-4 rounded-full text-white hover:bg-red-800 transition-all ease-in-out text-xl font-semibold;
+  }
+  .photo {
+    @apply h-full object-cover rounded-2xl hover:scale-105 hover:shadow-lg hover:shadow-red-700 border-slate-300 dark:border-slate-800 transition-all ease-in-out duration-500;
+  }
+}

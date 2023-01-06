@@ -3,7 +3,7 @@ import { UserContext } from "../../contexts/UserContext";
 
 interface photosInterface {
   id: Key | null | undefined;
-  src: { large: string | undefined; original: string | undefined };
+  src: { medium: string | undefined; original: string | undefined };
   alt: string;
   photographer: string;
 }
@@ -18,11 +18,12 @@ export function GallerySearch() {
             <img
               role="button"
               tabIndex={0}
-              onKeyPress={() => modal({ photo: photos })}
               onClick={() => modal({ photo: photos })}
-              src={photos.src.large}
-              className="h-full object-cover rounded-2xl md:shadow-2xl shadow-red-700 border-slate-300 dark:border-slate-800 transition-all ease-in-out"
+              src={photos.src.medium}
+              className="photo"
               alt={photos.alt}
+              width="100%"
+              height="100%"
             ></img>
             <div className="absolute bottom-3 mx-4 text-white">
               <p>{photos.photographer}</p>
