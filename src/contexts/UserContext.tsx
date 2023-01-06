@@ -85,7 +85,6 @@ export const UserContextProvider = ({ children }: UserContextProps) => {
         .get("curated?page=1&per_page=" + count)
         .then((response) => {
           setPhoto(response.data.photos);
-          console.log(response.data.photos);
         })
         .then(() => {
           setIsFetching(false);
@@ -107,7 +106,6 @@ export const UserContextProvider = ({ children }: UserContextProps) => {
         })
         .catch((error) => console.log(error));
     };
-    console.log(searchWord);
     searchPhotos();
   }, [countSearch, searchWord]);
 

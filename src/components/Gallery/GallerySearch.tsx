@@ -14,7 +14,7 @@ export function GallerySearch() {
     <>
       {barSearch.map((photos: photosInterface) => (
         <div key={photos.id}>
-          <a className="relative z-0 row-auto">
+          <div className="relative z-0 row-auto h-full">
             <img
               role="button"
               tabIndex={0}
@@ -28,7 +28,7 @@ export function GallerySearch() {
             <div className="absolute bottom-3 mx-4 text-white">
               <p>{photos.photographer}</p>
             </div>
-          </a>
+          </div>
         </div>
       ))}
     </>

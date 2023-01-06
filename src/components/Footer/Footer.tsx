@@ -5,12 +5,12 @@ export function Footer() {
         <a href="#" className="text-3xl">
           Photo<strong className="text-red-600">Book</strong>
         </a>
-        <p className="flex items-center mt-4 text-xs text-slate-500 mobile:mt-0">
+        <p className="flex items-center mt-4 text-xs dark:text-slate-200 text-slate-800 mobile:mt-0">
           powered by{" "}
           <img
             width="100%"
             height="100%"
-            className="w-20 ml-2 brightness-50 dark:brightness-[1000]"
+            className="w-20 ml-2 brightness-0 dark:brightness-[1000]"
             src="https://pexels-help.zendesk.com/hc/en-us/article_attachments/900007787843/White_Logo_on_Transparent.png"
             alt="Pexels Logo"
           />
@@ -18,10 +18,10 @@ export function Footer() {
       </div>
       <div>
         <h4 className="text-xl font-bold text-red-600">Social Media</h4>
-        <ul>
+        <ul className="flex flex-col gap-2">
           <li>
             <a
-              className="hover:text-red-500 transition-all"
+              className="hover:text-red-500 transition-all py-4"
               href="https://www.instagram.com/uildez/"
               target="_blank"
               rel="noreferrer"
@@ -31,7 +31,7 @@ export function Footer() {
           </li>
           <li>
             <a
-              className="hover:text-red-500 transition-all"
+              className="hover:text-red-500 transition-all py-4"
               href="https://www.github.com/uildez"
               target="_blank"
               rel="noreferrer"
@@ -41,7 +41,7 @@ export function Footer() {
           </li>
           <li>
             <a
-              className="hover:text-red-500 transition-all"
+              className="hover:text-red-500 transition-all py-4"
               href="https://www.linkedin.com/in/uildes-dem%C3%A9trio/"
               target="_blank"
               rel="noreferrer"
@@ -61,7 +61,7 @@ export function Footer() {
         >
           uildesdacosta@gmail.com
         </a>
-        <div className="footer-slogan text-slate-500">
+        <div className="footer-slogan dark:text-slate-200 text-slate-800">
           You are welcome to send a message.
         </div>
       </div>

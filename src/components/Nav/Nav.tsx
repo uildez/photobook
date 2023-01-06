@@ -22,7 +22,13 @@ export function Nav() {
           height="100%"
           alt="logo"
         />
-        <img src={LogoDark} className="block w-8 mr-4 dark:hidden" alt="logo" />
+        <img
+          src={LogoDark}
+          className="block w-8 mr-4 dark:hidden"
+          width="100%"
+          height="100%"
+          alt="logo"
+        />
         Photo<strong className="text-red-600">Book</strong>
       </a>
       <div className="flex md:flex gap-2 flex-row items-center md:gap-4 mr-4">
