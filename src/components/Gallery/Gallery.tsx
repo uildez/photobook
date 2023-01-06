@@ -12,7 +12,6 @@ export function Gallery() {
     setCount,
     countSearch,
     setCountSearch,
-    handleSearchChange,
     setBarSearch,
     searchWord,
   } = useContext(UserContext);
@@ -40,8 +39,7 @@ export function Gallery() {
                 <button
                   className="btn-red"
                   onClick={() => {
-                    setCountSearch(countSearch + 20),
-                      handleSearchChange(searchWord);
+                    setCountSearch(countSearch + 20);
                   }}
                 >
                   Load more
